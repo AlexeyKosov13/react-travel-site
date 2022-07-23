@@ -5,7 +5,7 @@ import './Cards.css';
 export const Cards = () => {
   return (
     <div className="cards">
-        <h1>Check out these EPIC Destination!</h1>
+        <h2>Check out these EPIC Destination!</h2>
         <div className="cards__wrapper">
             <ul className="cards__items">
                 <CardItem
