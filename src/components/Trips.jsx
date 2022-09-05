@@ -3,6 +3,7 @@ import "./Trips.css";
 import { trips } from "../data";
 
 export const Trips = () => {
+  
   function getTrips(data) {
     return data.map((item, index) => (
       <div className="trips__item" key={index}>

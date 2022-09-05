@@ -15,23 +15,24 @@
 }
 
 .trips__wrapper {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
-    justify-items: center;
+    display: flex;
+    justify-content: space-between;
     padding: 0 2rem;
 }
 
 
 .trips__item {
-    width: 100%;
+    width: 300px;
     height: 450px;
     overflow: hidden;
     position: relative;
     border-radius:10px;
-    transition: 0.2s ease;
-    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
-   
+    transition: all 0.2s ease;
+    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17); 
+}
+
+.trips__item:not(:last-child) {
+    margin-right: 10px;
 }
 
 .trips__img {
@@ -40,7 +41,7 @@
     object-fit: cover;
     position: absolute;
     filter: brightness(70%);
-    transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .trips__img:hover {
